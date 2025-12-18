@@ -16,7 +16,7 @@
 # print("Discount: ",discount)
 # print("Final payable amount: ",totalAmount-discount)
 
-
+# # # ====================================================================================
 
 # # 2.  Mobile recharge
 
@@ -28,6 +28,7 @@
 # # FnlBalance = rechargeAmt + talktime
 # print("Final Balance is: ", rechargeAmt+talktime)
 
+# # # ====================================================================================
 
 # # 3.  Electricity bill
 
@@ -45,3 +46,25 @@
 #     payable_bill = (100*3) + (100*5) + ((unit-200)*7)
     
 # print("Final Payable Bill: ",payable_bill)
+
+# # # ====================================================================================
+
+# # 4.  Print the Patern
+
+
+n=int(input("Enter the number: "))
+
+count = 0
+for i in range(1,n+1):
+    count = count + i
+    
+b = count
+
+for i in range (1,n+1):
+    n = b
+    for i in range(1,i+1):
+        print(n," ", end=" ")
+        n+=1
+        
+    print()
+    b = b-i-1
